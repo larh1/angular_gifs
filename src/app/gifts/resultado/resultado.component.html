@@ -1,0 +1,16 @@
+<div *ngIf="ver" class="">
+
+    <h4>Resultados de "{{buscado}}"</h4>
+    <div class="row">
+        <div class="column" *ngFor="let grupo of Resultados">
+            <img *ngFor="let img of grupo" [src]="img.images.downsized_medium.url">
+        </div>
+    </div>
+</div>
+
+<div *ngIf="!ver" class=" mx-0 px-0 mt-5 text-center">
+    <p class="text-muted fs-1 opacity-75">
+        Ingresa una frase para buscar
+        <i class="fas fa-search"></i>
+    </p>
+</div>

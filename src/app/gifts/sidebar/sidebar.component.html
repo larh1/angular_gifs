@@ -1,0 +1,10 @@
+<div class="nav text-white bg-dark flex-column nav-pills me-3" aria-orientation="vertical">
+  <div class="container text-center mt-4">
+    <h4>GifHub</h4>
+  </div>
+  <div id="sidebar" class="nav  flex-column mt-3">
+    <a (click)="Buscar(h)" *ngFor="let h of historial" href="#" class=" mx-3 px-2 text-center bg-white nav-link mt-1">
+      {{h}}
+    </a>
+  </div>
+</div>

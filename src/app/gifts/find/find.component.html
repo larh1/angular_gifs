@@ -1,0 +1,15 @@
+<div id="contenido" class="mx-4 my-4 tab-content">
+  <div class="row g-3">
+    <div class="col-lg-6 col-md-10 col-sm-10">
+      <div class="input-group">
+
+        <input #txtBuscar type="text" class="form-control" placeholder="Ingresa algo..."
+          (keyup.enter)="Buscar(txtBuscar.value)">
+      </div>
+    </div>
+    <div class="col-1">
+      <button (click)="Buscar(txtBuscar.value)" type="submit" class="btn btn-success">
+        <i class="fas fa-search"></i>
+      </button>
+    </div>
+  </div>
