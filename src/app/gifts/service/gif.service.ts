@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import {environment} from "src/environments/environment";
 
 @Injectable()
 export class GifService {
@@ -10,7 +11,7 @@ export class GifService {
   /// Resultados HTTP
   public resultados: any = [];
   private URL: String = 'https://api.giphy.com/v1/gifs/search';
-  private API_KEY: String = 'cN0VV9aTrhgzIzUe20O8jfIaCXtjNaVf';
+  private API_KEY: String = environment.api_key;
   private LIMIT: Number = 50;
   private _buscado: String = '';
 
